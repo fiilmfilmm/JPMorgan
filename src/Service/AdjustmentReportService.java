@@ -22,7 +22,7 @@ public class AdjustmentReportService implements IReportService {
 	
 	private void displayAllsales() {
 		HashMap<String, ArrayList<String>> messages = this.messageService.getAllSales();
-		System.out.println("=================================================== All Sales Report ===================================================");
+		System.out.println("=================================================== All Messages Received ===================================================");
 		for(Map.Entry<String, ArrayList<String>> entry: messages.entrySet()) {
 			System.out.println("All sales of " + entry.getKey());
 			System.out.println(entry.getValue());
